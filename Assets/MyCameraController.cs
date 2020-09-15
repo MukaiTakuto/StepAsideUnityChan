@@ -8,6 +8,11 @@ public class MyCameraController : MonoBehaviour
     //Unityちゃんのオブジェクト
     private GameObject unitychan;
 
+    // public GameObject carPrefab;
+    // public GameObject coinPrefab;
+    // public GameObject conePrefab;
+
+
     //Unityちゃんとカメラの距離
     private float difference;
 
@@ -18,6 +23,10 @@ public class MyCameraController : MonoBehaviour
         this.unitychan = GameObject.Find("unitychan");
         //Unityちゃんとカメラの位置（z座標）の差を求める
         this.difference = unitychan.transform.position.z - this.transform.position.z;
+
+        // this.carPrefab = GameObject.Find("carPrefab");
+
+        
         
     }
 

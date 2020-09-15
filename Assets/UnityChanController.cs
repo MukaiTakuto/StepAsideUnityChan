@@ -112,6 +112,9 @@ public class UnityChanController : MonoBehaviour
 
 
         this.myRigidbody.velocity = new Vector3(inputVelocityX , inputVelocityY, velocityZ);
+
+
+      
     }
     //トリガーモードで他のオブジェクトと接触した場合の処理
     void OnTriggerEnter(Collider other)
@@ -175,10 +178,13 @@ public class UnityChanController : MonoBehaviour
     }
 
     //右ボタンを離した場合の処理
-    public void GetMyRightButtonUp()
+
+     public void GetMyReftButtonUp()
     {
-        this.isRButtonDown = false;
+        this.isRButtonDown= false;
     }
 
-
+// void OnBecameInvisible (){
+//         GameObject.Destroy(this.gameObject);
+//     }
 }
